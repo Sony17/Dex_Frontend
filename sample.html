@@ -1,155 +1,223 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="sample.css" />
+  </head>
+  <div class="hero">
+    <div class="right_cointainer">
 
-<!-- // drop down List -->
-<select name="currency" id="currency">
-    <option value="usd">USD</option>
-    <option value="inr">INR</option>
-    <option value="matic">Matic</option>
-    <option value="xrp">XRP</option>
-</select>
+      <div class="search box_search">
+        <select name="currency" id="currency" class="currency">
+          <option value="usd">USD</option>
+          <option value="inr">INR</option>
+          <option value="matic">Matic</option>
+          <option value="xrp">XRP</option>
+        </select>
+       
+        <input type="text" placeholder=" 🔎  Search by coin">
+      </div>
 
-
-<!-- //search text area -->
-<textarea>
-        <img src="#"/>
-        Search by coin
-    </textarea>
-
-
-<label>1D</label>
-<label>1W</label>
-<label>1M</label>
-<label>6M</label>
-<label>1Y</label>
-<input type="date">
-<!-- //Cryptocurrenct List -->
-<select name="Cryptocurrency" id="cryptoCurrency">
-    <option value="btc">Cryptocurrency</option>
-    <option value="eth">Etherium</option>
-    <option value="matic">Matic</option>
-    <option value="xrp">XRP</option>
-</select>
-<!-- //ChartType List -->
-<select name="Chart type" id="chart">
-    <option value="btc">Chart Type</option>
-    <option value="eth">Etherium</option>
-    <option value="matic">Matic</option>
-    <option value="xrp">XRP</option>
-</select>
-<!-- // Selected Cryptocurrency label  //round icon -->
-<label><img src="#">Etherium</label>
-
-
-<!-- //Chart -->
-<img src="#">
-<div>
-    <button></button>
+      <div class="chart box border">
+        <div>
+            <label>1D</label>
+            <label>1W</label>
+            <label>1M</label>
+            <label>6M</label>
+            <label>1Y</label>
+            <input type="date" value=""/>
+            <select class="chart_dropdown" name="Cryptocurrency" id="cryptoCurrency">
+              <option value="btc">Cryptocurrency</option>
+              <option value="eth">Etherium</option>
+              <option value="matic">Matic</option>
+              <option value="xrp">XRP</option>
+            </select>
+            <select class="chart_dropdown" name="Chart type" id="chart">
+              <option value="btc">Chart Type</option>
+              <option value="eth">Etherium</option>
+              <option value="matic">Matic</option>
+              <option value="xrp">XRP</option>
+            </select>
+        </div>
+      
+      
+<div class="cryptoChart">
+    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/2MKEHW6MJFB7VGD353DCQSCEB4.png"/>
 </div>
+      
+      </div>
+<div class="bottom ">
+    <div class="portfolio box">
+        <div class="portfolio_top">
+            <h1>Portfolio</h1>
+            <h1>
+              <span class="total_value">Total value</span> 
+              <strong>$1000</strong>
+            </h1>
+        </div>
+       <div class="value">
+        
+          <img src="https://cdn.dribbble.com/users/2903114/screenshots/5771801/circle-dribble.gif" />
+          <ul>
+            <li>Matic</li>
+            <li>Solana</li>
+            <li>Luna</li>
+            <li>Etherium</li>
+            <li>Ripple</li>
+            <li>Bitcoin</li>
+            <li>Monero</li>
+          </ul>
+        </div>
+       
+      </div>
 
-<div>
+      <div class="exCoins box">
+        <h1 style="text-align:left; ">Exchange Coins</h1>
+        <h3 style="text-align:right; margin-right: 5em;">Enter Value</h3>
 
-    <!-- //portfolio box
-    //portfolio label
-    
-    //Total Value label
-    //Total Value label
-    //pie Chart
-    //List of ivested Coins -->
-    <h1>Portfolio</h1>
-    <h1>Total value <strong>$1000</strong></h1>
-    <ul>
-        <li>Tether</li>
-        <li>Luna</li>
-        <li>Etherium</li>
-    </ul>
-    <img src="#">
+        <div class="buy"> 
+            <div class="buy_tile">
+            <label  for="sell">Sell :</label>
+
+            <select name="sell" id="sell" class="exchange_currency">
+              <option value="bitcoin">Bitcoin</option>
+              <option value="etherium">Etherium</option>
+              <option value="matic">Matic</option>
+              <option value="xrp">XRP</option>
+            </select>
+            </div>
+            <textarea>Avl:0.002BTC</textarea>
+        </div>
+<div class="buy "> 
+    <div class="buy_tile ">
+        <label class="buy_label"for="buy">Buy  :</label>
+        <select name="buy" id="buy" class="exchange_currency">
+          <option value="bitcoin">Bitcoin</option>
+          <option value="etherium">Etherium</option>
+          <option value="matic">Matic</option>
+          <option value="xrp">XRP</option>
+        </select>
+   
+    </div>
+       
+   
+
+    <h3>230000 Eth</h3></div>
+       
+       
+     
+        <button class="exchange">Exchange</button>
+      </div>
 </div>
+      
+    </div>
+    <div class="left_cointaimer">
+      <div class="marketCapCrypto box">
+        <h1 class="cap_tittle">Cryptocurrency by Market Cap</h1>
+<div class="cap_tile">
+    <h3 class="currency_text">Matic</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+        
 
-
-
-
-
-
-<!-- //Exchange coin Box -->
-<div class="exCoins">
-    <!-- //Enter Value label
-        //Sell label
-         //Buy label -->
-    <!-- //Avalable balance textbox
-        //SellCrypto dropdown List
-         //Buy Crypto dropdown List -->
-
-    <!-- //correspondinf buy crypto label -->
-    <!-- //Exchange buttons -->
-
-    <!-- //Exchange coin label -->
-
-    <h1>Exchange Coins</h1>
-
-    <label for="sell">Sell</label>
-
-    <select name="sell" id="sell">
-        <option value="bitcoin">Bitcoin</option>
-        <option value="etherium">Etherium</option>
-        <option value="matic">Matic</option>
-        <option value="xrp">XRP</option>
-    </select>
-
-    <label for="buy">Buy</label>
-
-    <select name="buy" id="buy">
-        <option value="bitcoin">Bitcoin</option>
-        <option value="etherium">Etherium</option>
-        <option value="matic">Matic</option>
-        <option value="xrp">XRP</option>
-    </select>
-
-    <h2>Enter Value</h2>
-    <h2>230000 Eth</h2>
-    <textarea>Avl:0.002BTC</textarea>
-    <button class="exchange">Exchange</button>
-
-
-
+    </div>
 </div>
+<div class="cap_tile">
+    <h3 class="currency_text">Bitcoin</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile">
+    <h3 class="currency_text">Etherium</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile">
+    <h3 class="currency_text">Solana</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile">
+    <h3 class="currency_text">XRP</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile">
+    <h3 class="currency_text">USD</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile ">
+    <h3 class="currency_text">Tether</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile">
+    <h3 class="currency_text">Litecoin</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile">
+    <h3 class="currency_text">Monero</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
+</div><div class="cap_tile">
+    <h3 class="currency_text">Solana</h3>
+    <div class="cap">
+        <h3>MktCap $197,484</h3>
+        <h3>
+            <span >&#9650;</span>
+          2.12%
+        </h3>   
+    </div>
+   
 
-
-
-
-//
-<!-- Side Box -->
-<div class="marketCapCrypto">
-    <!-- Crypto by market cap label -->
-    <h1> Cryptocurrency by market cap</h1>
-
-    <!-- coin label * 7 -->
-    <!-- //market cap label and Value * 7 -->
-    <!-- //market cap value *7 with be fetched dynamically via coingecko api -->
-    <!-- //increase triangle icon and decrease triangle icon and increase decrease value percentage label -->
-
-    <h3>Tether</h3>
-    <h3>MktCap $197,484</h3>
-    <h3><img src="#">2.12%</h3>
-    <h3>Bitcoin</h3>
-    <h3>MktCap $197,484</h3>
-    <h3><img src="#">2.12%</h3>
-    <h3>Tether</h3>
-    <h3>MktCap $197,484</h3>
-    <h3><img src="#">2.12%</h3>
-    <h3>Tether</h3>
-    <h3>MktCap $197,484</h3>
-    <h3><img src="#">2.12%</h3>
-    <h3>Tether</h3>
-    <h3>MktCap $197,484</h3>
-    <h3><img src="#">2.12%</h3>
-    <h3>Tether</h3>
-    <h3>MktCap $197,484</h3>
-    <h3><img src="#">2.12%</h3>
-    <h3>Tether</h3>
-    <h3>MktCap $197,484</h3>
-    <h3><img src="#">2.12%</h3>
-
-
-</div>
-
+        
+        
+      </div>
+    </div>
+  </div>
 </html>

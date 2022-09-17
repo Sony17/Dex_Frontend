@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(37, 35, 35);
+  color: aqua;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+}
+
+.border {
+  border: 2px rebeccapurple dotted;
+}
+
+.box {
+  background-color: rgb(49, 49, 48);
+  text-align: center;
+  margin: 2em;
+  border: aqua 1px solid;
+  border-radius: 1em;
+}
+.hero {
+  display: flex;
+}
+
+.right_cointainer {
+  width: 70%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  padding-top: 0;
+}
+.portfolio {
+  width: 50%;
+}
+.exCoins {
+  width: 50%;
+}
+
+.cryptoChart {
+  width: 90%;
+  height: 30%;
+  background-color: rgb(119, 117, 115);
+  margin: 1em auto;
+
+}
+
+.marketCapCrypto {
+  padding: 1em 1em;
+}
+h3 {
+  margin: 0;
+}
+.cap {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  color: rgb(179, 232, 232);
+  font-weight: 50;
+}
+.currency_text {
+  text-align: left;
+  padding-left: 4em;
+  margin-bottom: 0.25em;
+}
+.cap_tile {
+  margin: 2em auto;
+}
+.cap_tittle {
+  margin: 0 2em;
+  width: 50%;
+  text-align: left;
+}
+
+/* Search */
+.box_search {
+  /* background-color: rgb(49, 49, 48); */
+  text-align: center;
+  margin: 2em;
+}
+
+.search {
+  padding: 0.5em 0;
+  justify-content: space-between;
+}
+.search input[type='text'] {
+  width: 90%;
+  border: 2px solid aqua;
+  border-radius: 1em;
+  height: 3.5em;
+  background-color: rgb(49, 49, 48);
+  color: whitesmoke;
+}
+.currency {
+  background-color: rgb(49, 49, 48);
+  color: whitesmoke;
+  height: 3.5em;
+  width: 7%;
+  border: 2px solid aqua;
+  border-radius: 1em;
+  margin-right: 1em;
+  margin-left: 0;
+  text-align: center;
+}
+
+/* Portfolio */
+.portfolio_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2em;
+}
+.total_value {
+  color: rgb(190, 243, 243);
+}
+.value {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  text-align: left;
+}
+.value img {
+  width: 15em;
+}
+
+/* Exchange */
+.exchange {
+  align-items: center;
+  background-color: aqua;
+  color: Black;
+  text-align: center;
+  width: 40%;
+  height: 3em;
+  font-size: medium;
+  padding: 0.2em 1em;
+  border-radius: 1px dotted black;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.exchange_currency {
+    background-color: rgb(119, 117, 115);
+    color: whitesmoke;
+  height: 2.7em;
+  border: 2px solid aqua;
+  border-radius: 1em;
+  margin-right: 1em;
+  margin-left: 0;
+  text-align: center;
+}
+.buy {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5em;
+ 
+}
+
+.buy_tile {
+  width: 80%;
+  text-align: left;
+}
+
+.buy_tile label{
+    font-size: large;
+}
+.exCoins{
+    padding: 0 2em;
+}
+.buy textarea{
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: 0;
+    border-radius: .5em;
+}
+
+/* chart */
+.chart{
+    padding: 1em;
+
+}
+.chart label{
+    /* background-color: rgb(119, 117, 115) ; */
+    padding: .5em;
+    border: aqua 1px solid;
+    border-radius: .25em;
+    margin-top: 1em;
+    margin-right: 1em;
+
+}
+
+.chart input{
+    padding: .5em;
+    background-color: rgb(49, 49, 48);
+    border: aqua 1px solid;
+    border-radius: .25em;
+    color: aqua;
+    margin-right: 1em;
+}
+
+.chart_dropdown{
+    background-color: rgb(49, 49, 48);
+
+    color: aqua;
+  height: 2.5em;
+  border: 1px solid aqua;
+  border-radius: .25em;
+  margin-left: 0;
+  text-align: center;
+  margin-right: 1em;
+}
+.cryptoChart img{
+    width: 95%;
+    height: 95%;
+    margin-top: .5em;
+}
