@@ -49,7 +49,6 @@ body {
   height: 27em;
   background-color: rgb(119, 117, 115);
   margin: 1em auto;
-
 }
 
 .marketCapCrypto {
@@ -147,8 +146,8 @@ li {
 }
 
 .exchange_currency {
-    background-color: rgb(119, 117, 115);
-    color: whitesmoke;
+  background-color: rgb(119, 117, 115);
+  color: whitesmoke;
   height: 2.7em;
   border: 2px solid aqua;
   border-radius: 1em;
@@ -159,8 +158,7 @@ li {
 .buy {
   display: flex;
   align-items: center;
-  margin-bottom: .5em;
- 
+  margin-bottom: 0.5em;
 }
 
 .buy_tile {
@@ -168,65 +166,62 @@ li {
   text-align: left;
 }
 
-.buy_tile label{
-    font-size: large;
+.buy_tile label {
+  font-size: large;
 }
-.exCoins{
-    padding: 0 2em;
+.exCoins {
+  padding: 0 2em;
 }
-.buy textarea{
-    text-align: center;
-    padding-top: .5em;
-    padding-bottom: 0;
-    border-radius: .5em;
+.buy textarea {
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0;
+  border-radius: 0.5em;
 }
 
 /* chart */
-.chart{
-    padding: 1em;
-
+.chart {
+  padding: 1em;
 }
-.chart label{
-    /* background-color: rgb(119, 117, 115) ; */
-    padding: .5em;
-    border: aqua 1px solid;
-    border-radius: .25em;
-    margin-top: 1em;
-    margin-right: 1em;
-
+.chart label {
+  /* background-color: rgb(119, 117, 115) ; */
+  padding: 0.5em;
+  border: aqua 1px solid;
+  border-radius: 0.25em;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
-.chart input{
-    padding: .5em;
-    background-color: rgb(49, 49, 48);
-    border: aqua 1px solid;
-    border-radius: .25em;
-    color: aqua;
-    margin-right: 1em;
+.chart input {
+  padding: 0.5em;
+  background-color: rgb(49, 49, 48);
+  border: aqua 1px solid;
+  border-radius: 0.25em;
+  color: aqua;
+  margin-right: 1em;
 }
 
-.chart_dropdown{
-    background-color: rgb(49, 49, 48);
+.chart_dropdown {
+  background-color: rgb(49, 49, 48);
 
-    color: aqua;
+  color: aqua;
   height: 2.5em;
   border: 1px solid aqua;
-  border-radius: .25em;
+  border-radius: 0.25em;
   margin-left: 0;
   text-align: center;
   margin-right: 1em;
 }
-.cryptoChart img{
-    width: 95%;
-    height: 95%;
-    margin-top: .5em;
+.cryptoChart img {
+  width: 95%;
+  height: 95%;
+  margin-top: 0.5em;
 }
 
-.exCoin_Label{
-  text-align:left; 
+.exCoin_Label {
+  text-align: left;
 }
-.ex_value_text{
-
-  text-align:right; 
+.ex_value_text {
+  text-align: right;
   margin-right: 5em;
 }
