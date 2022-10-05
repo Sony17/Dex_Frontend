@@ -1,108 +1,17 @@
 import '../App.css'
+import useAxios from "../hooks/useAxios"
+import TrendingTile from './TrendingTile';
 export default function Crypto() {
+
+  const { response, loading } = useAxios('coins/markets?vs_currency=usd&ids=bitcoin%2C%20ethereum%2Ctether%2C%20binancecoin%2Cusd-coin%2C%20ripple%2Cbinance-usd%2C%20cardano%2C%20solana%2C%20dogecoin&order=market_cap_desc&per_page=100&page=1&sparkline=false');
+console.log(response)
+
   return (
     <div class="marketCapCrypto box">
       <h1 class="cap_tittle">Cryptocurrency by Market Cap</h1>
-      <div class="cap_tile">
-        <h3 class="currency_text">Matic</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">Bitcoin</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">Etherium</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">Solana</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">XRP</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">USD</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile ">
-        <h3 class="currency_text">Tether</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">Litecoin</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">Monero</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
-      <div class="cap_tile">
-        <h3 class="currency_text">Solana</h3>
-        <div class="cap">
-          <h3>MktCap $197,484</h3>
-          <h3>
-            <span>&#9650;</span>
-            2.12%
-          </h3>
-        </div>
-      </div>
+       {response && response.map(coin =>  <TrendingTile key={coin.id} coin={coin}/>)}
+      
+
     </div>
   )
 }

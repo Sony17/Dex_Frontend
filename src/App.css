@@ -63,6 +63,16 @@ h3 {
   margin-top: 0;
   color: rgb(179, 232, 232);
   font-weight: 50;
+  margin-bottom: 1em;
+}
+.trending_down{
+  color: crimson;
+}
+.crypto_image{
+  width: 6%;
+}
+.coin{
+  display: flex;
 }
 .currency_text {
   text-align: left;
@@ -225,3 +235,5 @@ li {
   text-align: right;
   margin-right: 5em;
 }
+
+
